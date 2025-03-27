@@ -1,6 +1,8 @@
 version: "3.3"
 services:
   fastapi-ml:
+    volumes:
+      - ./app:/app/app
     container_name: fastapi-ml
     build:
       context: .
